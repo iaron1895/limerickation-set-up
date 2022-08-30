@@ -1,16 +1,19 @@
 import re
 import pickle
 
+# save object as a pickle file
 def save_model(model,filename):
     filename += ".pickle"
     with open(filename, 'wb') as target:
         pickle.dump(model, target)
 
+# load object from a pickle file
 def load_model(filename):
     with open(filename, 'rb') as target:
         model = pickle.load(target)
     return model
     
+# code to count syllables in a word taken from https://eayd.in/?p=232
 def count_syllables(word):
     word = word.lower()
 

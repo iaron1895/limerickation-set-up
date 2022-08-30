@@ -3,6 +3,7 @@ from helper import count_syllables
 file1 = open('adjectives/english-adjectives.txt', 'r')
 Lines = file1.readlines()
 
+# filter out all adjectives longer than 3 syllables
 with open('adjectives/english-adjectives-filtered.txt', 'w') as f:
     for line in Lines:
         if line[:-1].isalpha():

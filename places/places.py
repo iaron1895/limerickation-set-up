@@ -3,6 +3,7 @@ import unidecode
 
 package = Package('https://datahub.io/core/world-cities/datapackage.json')
 
+# create list of all city and country names using instructions in https://datahub.io/core/world-cities\#readme
 def get_places():
     with open('places/places.txt', 'w') as f:
         for resource in package.resources:

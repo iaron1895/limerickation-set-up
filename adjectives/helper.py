@@ -1,11 +1,13 @@
 import re
 import pickle
 
+# save an object as a pickle file
 def save_model(model,filename):
     filename += ".pickle"
     with open(filename, 'wb') as target:
         pickle.dump(model, target)
 
+# code to count syllables in a word taken from https://eayd.in/?p=232
 def count_syllables(word):
     word = word.lower()
 

@@ -1,5 +1,6 @@
 from helper import save_model
 
+# save adjectives list as a pickle file
 final_adjectives = []
 
 file1 = open('adjectives/english-adjectives-manual-filtered.txt', 'r')
